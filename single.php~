@@ -1,0 +1,26 @@
+<?php 
+
+	get_header(); ?>
+
+<div id="main" class="group">
+	<div id="blog" class="left-col">
+		<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
+		<div id="post">
+			<h2><?php the_title(); ?></h2>
+			<div class="byline"> escrito por <?php the_author_posts_link(); ?> en <?php the_time('l F d, Y'); ?></div>
+			<?php the_content('leer mas..'); /*the_excerpt();*/ ?>
+			<?php endwhile; ?>
+			<?php endif; ?>
+			<div class="navi">
+				<div class="right">
+					<?php previous_posts_link('anterior'); ?>
+					<?php next_posts_link('siguiente'); ?>
+				</div>
+			</div>
+		</div> <!-- fin del post -->
+	</div><!-- fin del blog -->
+</div><!-- fin del main -->
+	
+<?php get_footer(); ?>
+
+		
