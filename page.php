@@ -6,7 +6,7 @@
 	<div id="blog" class="left-col">
 		<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 		<div id="post">
-			<?php the_content('leer mas..'); /*the_excerpt();*/ ?>
+			<p><br><?php the_content(); /*the_excerpt();*/ ?></br></p>
 			<?php endwhile; ?>
 			<?php endif; ?>
 		</div> <!-- fin del post -->

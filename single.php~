@@ -1,3 +1,4 @@
+<!-- mostrar el post completo -->
 <?php 
 
 	get_header(); ?>
@@ -8,7 +9,7 @@
 		<div id="post">
 			<h2><?php the_title(); ?></h2>
 			<div class="byline"> escrito por <?php the_author_posts_link(); ?> en <?php the_time('l F d, Y'); ?></div>
-			<?php the_content('leer mas..'); /*the_excerpt();*/ ?>
+			<p></br><?php the_content('leer mas..'); /*the_excerpt();*/ ?> </br></p>
 			<?php endwhile; ?>
 			<?php endif; ?>
 			<div class="navi">

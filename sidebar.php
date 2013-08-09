@@ -1,4 +1,13 @@
-<aside class="right-col">
+<aside class="right-col" id="asideder">
 	<?php if(function_exists('dynamic_sidebar') || dynamic_sidebar('Primary Sidebar')) : dynamic_sidebar('Primary Sidebar'); ?>
 	<?php endif; ?>
+</aside>
+
+<asisde class="left-col" id="asideizq">
+	<?php if(function_exists('dynamic_sidebar')) dynamic_sidebar('Secundary Sidebar'); ?>
+
+</aside>
+
+<aside id="imagen">
+	<?php if(function_exists('dynamic-sidebar')) dynamic_sidebar('Tercer Sidebar'); ?>
 </aside>
